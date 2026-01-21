@@ -111,3 +111,66 @@ nav ul li a:hover,
 html {
   scroll-behavior: smooth;
 }
+
+/* --- Back to top button --- */
+#backTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ee61ba;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: none; /* hidden initially */
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+#backTop:hover {
+  transform: scale(1.2);
+}
+
+/* --- Sticky header on scroll --- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: inherit;
+  transition: box-shadow 0.3s;
+}
+
+header.scrolled {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+  .main {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .main-image {
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+  }
+
+  .image-shape img {
+    width: 250px;
+    height: 250px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+}
