@@ -1,4 +1,3 @@
-# Personal-Portfolio
 # Personal Portfolio Website
 
 Welcome to my personal portfolio project!  
