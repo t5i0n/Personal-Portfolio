@@ -1,6 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Tsi's Website</title>
   </head>
@@ -36,7 +38,7 @@
             design and I'm really enjoying the process.
           </p>
           <button id="contactBtn">Contact Me</button>
-          <button id="modeToggle">Theme</button>
+          <button id="modeToggle" aria-label="Toggle dark mode">Theme</button>
         </div>
         <div class="main-image">
           <div class="image-shape">
@@ -45,9 +47,13 @@
         </div>
       </section>
       <!-- About Section -->
-      <section id="about">
+      <section id="about" class="content-section" `>
         <h2>About Me</h2>
-        <p>I am a CS student passionate about web development and learning new skills every day.</p>
+        <p>
+          I'm a Information Systems student who enjoys turning ideas into
+          simple, clean web experiences. I'm still learning, still
+          experimenting, and slowly finding my own style.
+        </p>
       </section>
 
       <!-- Skills Section -->
@@ -55,31 +61,49 @@
         <h2>Skills</h2>
         <ul>
           <li>HTML & CSS</li>
-          <li>JavaScript</li>
+          <li>JavaScript (Basics)</li>
           <li>Git & GitHub</li>
           <li>Python (Basics)</li>
         </ul>
       </section>
 
       <!-- Projects Section -->
-      <section id="projects">
+      <section id="projects" class="content-section">
         <h2>Projects</h2>
-        <div class="project">
+        <div class="project-card">
           <h3>Daily Schedule App</h3>
-          <p>A simple web app that highlights current activities and supports dark mode.</p>
+          <p>
+            A simple web app that highlights current activities and supports
+            dark mode.
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>Personal Portfolio</h3>
+          <p>
+            This website — built using plain HTML, CSS, and JavaScript as a
+            learning project.
+          </p>
         </div>
       </section>
 
       <!-- Contact Section -->
-      <section id="contact">
+      <section id="contact" class="content-section">
         <h2>Contact</h2>
-        <p>Email: yourname@example.com</p>
+        <p>Want to talk, collaborate, or just say hi?</p>
+
+        <a class="contact-link" href="mailto:tsiontesfuu@gmail.com">
+          tsiontesfuu@gmail.com
+        </a>
       </section>
     </main>
+    <!-- ===== Footer ===== -->
+    <footer>
+      <p>© 2026 Tsi. Built with curiosity ✨</p>
+    </footer>
 
     <!-- Back to Top Button -->
-    <button id="backTop">↑</button>
-    </main>
+    <button id="backTop" aria-label="back to top">↑</button>
     <script src="script.js"></script>
   </body>
 </html>
+
