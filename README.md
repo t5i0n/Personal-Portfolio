@@ -1,25 +1,21 @@
-# Personal Portfolio Website
+# tsion's Portfolio Website
 
-Welcome to my personal portfolio project!  
-This website showcases who I am, my skills, and the projects I’ve worked on as I continue my journey in tech.
-
-## About the Project
-
-This is a **personal portfolio website** built to:
-- Introduce myself
-- Highlight my skills and interests
-- Showcase selected projects
-- Provide a way to contact me
-
-The project is designed to be **simple, responsive, and easy to navigate**.
+A modern, responsive portfolio website built with HTML, CSS, and JavaScript.
 
 ## Features
 
-- Responsive design (works on desktop and mobile)
-- Clean and simple UI
-- Sections for:
-  - About Me
-  - Skills
-  - Projects
-  - Contact information
-- Easy to update and customize
+- **Dark/Light Mode** - Toggle between themes with persistent preference
+- **Fully Responsive** - Works on all devices
+- **Modern Design** - Clean aesthetics with custom animations
+- **Fast Performance** - Optimized loading and smooth interactions
+- **Accessible** - WCAG compliant with keyboard navigation
+- **Interactive Skills** - Animated progress bars
+- **Contact Form** - Functional contact form with validation
+
+## Technologies Used
+
+- **HTML5** 
+- **CSS3** 
+- **JavaScript (ES6+)** 
+- **Font Awesome** 
+- **Google Fonts** 
