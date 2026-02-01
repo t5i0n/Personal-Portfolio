@@ -16,6 +16,6 @@ A modern, responsive portfolio website built with HTML, CSS, and JavaScript.
 
 - **HTML5** 
 - **CSS3** 
-- **JavaScript (ES6+)** 
+- **JavaScript** 
 - **Font Awesome** 
 - **Google Fonts** 
