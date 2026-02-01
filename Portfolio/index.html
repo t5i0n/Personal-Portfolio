@@ -3,108 +3,378 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tsion's Portfolio - Web Developer and Student"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Tsi's Website</title>
+    <title>Tsi's Portfolio | Web Developer</title>
   </head>
   <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header>
       <div class="logo">t5i0N</div>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
+      <nav aria-label="Main navigation">
+        <div class="nav-left">
+          <!-- Theme toggle in navigation -->
+          <button
+            id="modeToggle"
+            class="theme-toggle"
+            aria-label="Toggle dark mode"
+          >
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
 
-        </ul>
+        <div class="nav-center">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="nav-right">
+          <!-- Mobile menu button -->
+          <button class="menu-toggle" aria-label="Toggle navigation menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
       </nav>
     </header>
 
-    <main>
-      <section class="main" id="home">
-        <div class="main-text">
+    <main id="main-content">
+      <!-- Hero Section -->
+      <section class="hero" id="home">
+        <div class="hero-text">
           <h1>
             Heyyyy,<br />
-            I'm <span class="highlight">Tsi</span><br />
+            I'm <span class="highlight">tsion</span><br />
             Just Having Fun !!!
           </h1>
 
-          <h2>
+          <h2 class="subtitle">
             I'm a student learning to build awesome websites, and this is my
             first attempt.
           </h2>
           <p>
-            I'm currently learning HTML,CSS and JS. I love experimenting with
-            design and I'm really enjoying the process.
+            I'm currently learning HTML, CSS and JavaScript. I love
+            experimenting with design and I'm really enjoying the process.
           </p>
-          <button id="contactBtn">Contact Me</button>
-          <button id="modeToggle" aria-label="Toggle dark mode">Theme</button>
+          <div class="hero-buttons">
+            <button id="contactBtn" class="btn-primary">
+              <i class="fas fa-envelope"></i> Contact Me
+            </button>
+          </div>
         </div>
-        <div class="main-image">
+        <div class="hero-image">
           <div class="image-shape">
-            <img src="tsi.jpg" alt="Tsi's photo" />
+            <img src="tsi.jpg" alt="Tsion's professional portrait" />
+            <!-- Decorative elements -->
+            <div class="shape-decoration shape-1"></div>
+            <div class="shape-decoration shape-2"></div>
           </div>
         </div>
       </section>
+
       <!-- About Section -->
-      <section id="about" class="content-section" `>
+      <section id="about" class="content-section fade-in">
         <h2>About Me</h2>
-        <p>
-          I'm a Information Systems student who enjoys turning ideas into
-          simple, clean web experiences. I'm still learning, still
-          experimenting, and slowly finding my own style.
-        </p>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I'm an Information Systems student who enjoys turning ideas into
+              simple, clean web experiences. I'm still learning, still
+              experimenting, and slowly finding my own style.
+            </p>
+            <p>
+              When I'm not coding, I enjoy exploring new technologies,
+              contributing to open-source projects, and documenting my learning
+              journey.
+            </p>
+          </div>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-target="15">0</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="1000">0</span>
+              <span class="stat-label">Lines of Code</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="1">0</span>
+              <span class="stat-label">Year Experience</span>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Skills Section -->
-      <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>HTML & CSS</li>
-          <li>JavaScript (Basics)</li>
-          <li>Git & GitHub</li>
-          <li>Python (Basics)</li>
-        </ul>
+      <section id="skills" class="content-section fade-in">
+        <h2>Skills & Technologies</h2>
+        <div class="skills-container">
+          <div class="skill-category">
+            <h3><i class="fas fa-code"></i> Frontend</h3>
+            <div class="skill-item">
+              <span class="skill-name">HTML5</span>
+              <div class="skill-bar">
+                <div class="skill-level" data-level="90"></div>
+              </div>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">CSS3</span>
+              <div class="skill-bar">
+                <div class="skill-level" data-level="85"></div>
+              </div>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar">
+                <div class="skill-level" data-level="75"></div>
+              </div>
+              <span class="skill-percent">75%</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+            <div class="skill-item">
+              <span class="skill-name">Git & GitHub</span>
+              <div class="skill-bar">
+                <div class="skill-level" data-level="80"></div>
+              </div>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Python</span>
+              <div class="skill-bar">
+                <div class="skill-level" data-level="70"></div>
+              </div>
+              <span class="skill-percent">70%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Responsive Design</span>
+              <div class="skill-bar">
+                <div class="skill-level" data-level="85"></div>
+              </div>
+              <span class="skill-percent">85%</span>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Projects Section -->
-      <section id="projects" class="content-section">
-        <h2>Projects</h2>
-        <div class="project-card">
-          <h3>Daily Schedule App</h3>
-          <p>
-            A simple web app that highlights current activities and supports
-            dark mode.
-          </p>
-        </div>
-        <div class="project-card">
-          <h3>Personal Portfolio</h3>
-          <p>
-            This website — built using plain HTML, CSS, and JavaScript as a
-            learning project.
-          </p>
+      <section id="projects" class="content-section fade-in">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card" tabindex="0">
+            <div class="project-icon">
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+            <h3>Daily Schedule App</h3>
+            <p>
+              A simple web app that highlights current activities and supports
+              dark mode with local storage.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" aria-label="View Live Demo">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a
+                href="#"
+                class="project-link"
+                aria-label="View Source Code on GitHub"
+              >
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card" tabindex="0">
+            <div class="project-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3>Personal Portfolio</h3>
+            <p>
+              This responsive portfolio website built with pure HTML, CSS, and
+              JavaScript featuring dark mode.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Responsive</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" aria-label="View Live Demo">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a
+                href="#"
+                class="project-link"
+                aria-label="View Source Code on GitHub"
+              >
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card" tabindex="0">
+            <div class="project-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <h3>E-Commerce Template</h3>
+            <p>
+              A responsive e-commerce UI template with product filtering and
+              shopping cart functionality.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS Grid</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" aria-label="View Live Demo">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a
+                href="#"
+                class="project-link"
+                aria-label="View Source Code on GitHub"
+              >
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Contact Section -->
-      <section id="contact" class="content-section">
-        <h2>Contact</h2>
-        <p>Want to talk, collaborate, or just say hi?</p>
+      <section id="contact" class="content-section fade-in">
+        <h2>Get In Touch</h2>
+        <p>
+          Want to talk, collaborate, or just say hi? I'd love to hear from you!
+        </p>
 
-        <a class="contact-link" href="mailto:tsiontesfuu@gmail.com">
-          tsiontesfuu@gmail.com
-        </a>
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-method">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <a href="mailto:tsiontesfuu@gmail.com" class="contact-link">
+                  tsiontesfuu@gmail.com
+                </a>
+              </div>
+            </div>
+            <div class="contact-method">
+              <i class="fab fa-github"></i>
+              <div>
+                <h3>GitHub</h3>
+                <a href="https://github.com/t5i0n" class="contact-link">
+                  github.com/t5i0n
+                </a>
+              </div>
+            </div>
+            <div class="contact-method">
+              <i class="fab fa-linkedin"></i>
+              <div>
+                <h3>LinkedIn</h3>
+                <a
+                  href="https://linkedin.com/in/tsion-tesfaye-b0248a391"
+                  class="contact-link"
+                >
+                  linkedin.com/in/tsion-tesfaye
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" aria-label="Contact form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                aria-required="true"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                aria-required="true"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                aria-required="true"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-primary">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
       </section>
     </main>
+
     <!-- ===== Footer ===== -->
     <footer>
-      <p>© 2026 Tsi. Built with curiosity ✨</p>
+      <div class="footer-content">
+        <p>© 2026 tsion. Built with curiosity ✨</p>
+        <div class="social-links">
+          <a href="https://github.com/t5i0n" aria-label="GitHub profile">
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/tsion-tesfaye-b0248a391"
+            aria-label="LinkedIn profile"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:tsiontesfuu@gmail.com" aria-label="Send email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="backTop" aria-label="back to top">↑</button>
+    <button id="backTop" aria-label="Back to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Loading animation -->
+    <div class="loading" id="loading">
+      <div class="loading-spinner"></div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
-
