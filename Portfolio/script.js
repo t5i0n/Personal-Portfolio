@@ -1,27 +1,22 @@
-// Contact Button
-document.getElementById("contactBtn").addEventListener("click", function() {
+// ===== Contact Button =====
+document.getElementById("contactBtn").addEventListener("click", () => {
   window.location.href = "mailto:yourname@example.com";
 });
-//Dark/Light Mode Toggle
-document.getElementById("modeToggle").addEventListener("click", function() {
+
+// ===== Dark / Light Mode =====
+document.getElementById("modeToggle").addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
 
-// Back to top button
+// ===== Back to Top + Sticky Header =====
 const backTop = document.getElementById("backTop");
-window.addEventListener("scroll", function() {
-  // Show button after scrolling 300px
-  backTop.style.display = window.scrollY > 300 ? "block" : "none";
+const header = document.querySelector("header");
 
-  // Add shadow to header after scrolling
-  const header = document.querySelector("header");
-  if (window.scrollY > 50) {
-    header.classList.add("scrolled");
-  } else {
-    header.classList.remove("scrolled");
-  }
+window.addEventListener("scroll", () => {
+  backTop.style.display = window.scrollY > 300 ? "block" : "none";
+  header.classList.toggle("scrolled", window.scrollY > 50);
 });
 
-backTop.addEventListener("click", function() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+backTop.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
 });
