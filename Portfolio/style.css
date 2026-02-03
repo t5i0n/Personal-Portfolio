@@ -77,6 +77,7 @@ header.scrolled {
   font-size: 1.5rem;
   background: linear-gradient(45deg, var(--primary-color), #ff85c0);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: var(--transition);
 }
