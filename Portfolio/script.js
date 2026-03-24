@@ -1,11 +1,11 @@
-// ===== Loading Animation =====
+/* ===== Loading Animation =====
 window.addEventListener('load', () => {
   const loading = document.getElementById('loading');
   setTimeout(() => {
     loading.style.opacity = '0';
     loading.style.visibility = 'hidden';
   }, 500);
-});
+}); */
 
 // ===== Mobile Menu Toggle =====
 const menuToggle = document.querySelector('.menu-toggle');
