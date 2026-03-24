@@ -13,32 +13,44 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Tsi's Portfolio | Web Developer</title>
+    <title>Tsion's Portfolio | Web Developer</title>
+
+    
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <!-- Skip to main content for accessibility -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <header>
-      <div class="logo">t5i0N</div>
+      <div class="logo">tt</div> 
+      <style>
+    .logo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    }
+    </style>
+      
       <nav aria-label="Main navigation">
-        <div class="nav-left">
-          <!-- Theme toggle in navigation -->
-          <button
-            id="modeToggle"
-            class="theme-toggle"
-            aria-label="Toggle dark mode"
-          >
-            <i class="fas fa-moon"></i>
-          </button>
-        </div>
-
         <div class="nav-center">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          <ul class="nav-links"> 
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <!-- Theme toggle directly after Contact -->
+              <button
+                id="modeToggle"
+                class="theme-toggle"
+                aria-label="Toggle dark mode"
+              >
+                <i class="fas fa-moon"></i>
+              </button>
+            </li>
+          </ul>
         </div>
 
         <div class="nav-right">
@@ -54,29 +66,27 @@
       <!-- Hero Section -->
       <section class="hero" id="home">
         <div class="hero-text">
-          <h1>
-            Heyyyy,<br />
-            I'm <span class="highlight">tsion</span><br /> 
-          </h1>
+          <h1>Heyyyy, I'm <span class="highlight">tsion </span></h1>
 
           <h2 class="subtitle">
-            Information Systems Student at Hawassa University | Aspiring Web
-            Developer & UI/UX Designer | Passionate Learner & Creator
+            Junior Front-End Developer | Exploring Back-End & UI/UX Design |
+            Passionate Learner & Creator
           </h2>
-          <p>
-            I'm a student who loves building things for the web. I enjoy turning
-            ideas into simple, clean, and intuitive web experiences. I'm still
-            learning, still experimenting, and slowly finding my own style.
-          </p>
+
           <div class="hero-buttons">
             <button id="contactBtn" class="btn-primary">
               <i class="fas fa-envelope"></i> Contact Me
             </button>
+            <button id="downloadResumeBtn" class="btn-primary">
+              <i class="fas fa-envelope"></i> Download Resume
+            </button>
           </div>
+
+          
         </div>
         <div class="hero-image">
           <div class="image-shape">
-            <img src="t.jpg" alt="Tsion's professional portrait" />
+            <img src="tsi.JPG" alt="Tsion's professional portrait" />
             <!-- Decorative elements -->
             <div class="shape-decoration shape-1"></div>
             <div class="shape-decoration shape-2"></div>
@@ -89,24 +99,22 @@
         <h2>About Me</h2>
         <div class="about-content">
           <div class="about-text">
-            <p>
-              I am a 3rd-year Information Systems Student at Hawassa University
-              with a strong passion for web programming and UI/UX design. I love
-              designing and creating engaging, user-friendly experiences, and I
-              enjoy applying my programming knowledge to small projects to build
-              practical skills.
-            </p>
-            <p>
-               As a dedicated learner, I continuously seek opportunities to grow
-              and improve my abilities, experimenting with new tools,
-              frameworks, and design techniques. I am eager to contribute to
-              projects, collaborate with others, and further develop my skills
-              in web development and user interface design.
+            <p> 
+              I’m an Information Systems student at Hawassa University, focused
+              on building web applications that balance clarity, responsiveness,
+              and usability. My main strength is front‑end development, where I
+              enjoy crafting clean interfaces with HTML, CSS, and JavaScript.
+              I’m expanding into backend technologies to
+              better understand full‑stack workflows, while also exploring UI/UX
+              design to make digital experiences more intuitive. I’m eager to
+              contribute to projects where thoughtful engineering and strong
+              product quality matter.
+        
             </p>
           </div>
           <div class="about-stats">
             <div class="stat-item">
-              <span class="stat-number" data-target="4">0</span>
+              <span class="stat-number" data-target="5">0</span>
               <span class="stat-label">Projects Built</span>
             </div>
             <div class="stat-item">
@@ -130,47 +138,57 @@
             <div class="skill-item">
               <span class="skill-name">HTML5</span>
               <div class="skill-bar">
-                <div class="skill-level" data-level="80"></div>
+                <div class="skill-level" data-level="90"></div>
               </div>
-              <span class="skill-percent">80%</span>
+              <span class="skill-percent">90%</span>
             </div>
             <div class="skill-item">
               <span class="skill-name">CSS3</span>
               <div class="skill-bar">
-                <div class="skill-level" data-level="55"></div>
+                <div class="skill-level" data-level="88"></div>
               </div>
-              <span class="skill-percent">55%</span>
+              <span class="skill-percent">88%</span>
             </div>
             <div class="skill-item">
               <span class="skill-name">JavaScript</span>
               <div class="skill-bar">
-                <div class="skill-level" data-level="45"></div>
+                <div class="skill-level" data-level="70"></div>
               </div>
-              <span class="skill-percent">45%</span>
-            </div> 
+              <span class="skill-percent">70%</span>
+            </div>
+
+    <div class="skill-item">
+              <span class="skill-name">Bootstrap</span>
+              <div class="skill-bar">
+                <div class="skill-level" data-level="50"></div>
+              </div>
+              <span class="skill-percent">50%</span>
+            </div>
+
+
           </div>
           <div class="skill-category">
             <h3><i class="fas fa-cogs"></i> Backend</h3>
             <div class="skill-item">
               <span class="skill-name">PHP</span>
               <div class="skill-bar">
-                <div class="skill-level" data-level="15"></div>
+                <div class="skill-level" data-level="35"></div>
               </div>
-              <span class="skill-percent">15%</span>
+              <span class="skill-percent">35%</span>
             </div>
             <div class="skill-item">
               <span class="skill-name">Python</span>
               <div class="skill-bar">
-                <div class="skill-level" data-level="10"></div>
+                <div class="skill-level" data-level="30"></div>
               </div>
-              <span class="skill-percent">10%</span>
+              <span class="skill-percent">30%</span>
             </div>
             <div class="skill-item">
               <span class="skill-name">MySQL</span>
               <div class="skill-bar">
-                <div class="skill-level" data-level="20"></div>
+                <div class="skill-level" data-level="30"></div>
               </div>
-              <span class="skill-percent">20%</span>
+              <span class="skill-percent">30%</span>
             </div>
           </div>
 
@@ -202,36 +220,6 @@
 
           <div class="project-card" tabindex="0">
             <div class="project-icon">
-              <i class="fas fa-laptop-code"></i>
-            </div>
-            <h3>Personal Portfolio</h3>
-            <p>
-              This responsive portfolio website built with pure HTML, CSS, and
-              JavaScript featuring dark mode.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">HTML5</span>
-              <span class="tech-tag">CSS</span>
-              <span class="tech-tag">JavaScript</span>
-              <span class="tech-tag">Responsive</span>
-            </div>
-            <div class="project-links">
-              <!-- <a href="#" class="project-link" aria-label="View Live Demo">
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </a> -->
-              <a
-                href="https://github.com/t5i0n/Personal-Portfolio.git"
-                class="project-link"
-                aria-label="View Source Code on GitHub"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fab fa-github"></i> Code
-              </a>
-            </div>
-          </div>
-          <div class="project-card" tabindex="0">
-            <div class="project-icon">
               <i class="fas fa-money-bill-wave"></i>
             </div>
             <h3>Student Finance Tracker</h3>
@@ -243,11 +231,42 @@
               <span class="tech-tag">HTML5</span>
               <span class="tech-tag">CSS</span>
               <span class="tech-tag">JavaScript</span>
-              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Firebase Auth</span>
             </div>
             <div class="project-links">
               <a
-                href="https://github.com/t5i0n/Personal-Portfolio.git"
+                href="https://sft-web.netlify.app/about"
+                class="project-link"
+                aria-label="Visit Website"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fas fa-globe"></i> Website
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card" tabindex="0">
+            <div class="project-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <h3>NextLMS</h3>
+            <p>
+              A full-stack Learning Management System featuring role-based access, course management, student enrollment, and progress tracking.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Bootstrap</span>
+              <span class="tech-tag">PHP</span>
+               <span class="tech-tag">MySQL</span>
+              </span>
+
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/t5i0n/NextLMS.git"
                 class="project-link"
                 aria-label="View Source Code on GitHub"
                 target="_blank"
@@ -260,60 +279,13 @@
 
           <div class="project-card" tabindex="0">
             <div class="project-icon">
-              <i class="fas fa-shopping-cart"></i>
-            </div>
-            <h3>CashFlow-Logger</h3>
-            <p>
-              A C++ console application that helps users record, track, and manage daily income and expenses for better financial awareness.
-            <div class="project-tech">
-              <span class="tech-tag">C++</span>
-            </div>
-            <div class="project-links">
-              <a
-                href="https://github.com/t5i0n/CashFlow-Logger.git"
-                class="project-link"
-                aria-label="View Source Code on GitHub"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fab fa-github"></i> Code
-              </a>
-            </div>
-          </div>
-          <div class="project-card" tabindex="0">
-            <div class="project-icon">
-              <i class="fas fa-book"></i>
-            </div>
-            <h3>Learning Management System</h3>
-            <p>
-              Basic web application designed to track students course learning
-              progress. The system focuses on progress visibility, not content
-              creation or complex assessments.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">HTML5</span>
-              <span class="tech-tag">CSS</span>
-              <span class="tech-tag">JavaScript</span>
-            </div>
-            <div class="project-links"> 
-              <a
-                href="https://github.com/SAMI477716/LMS-Website.git"
-                class="project-link"
-                aria-label="View Source Code on GitHub"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fab fa-github"></i> Code
-              </a>
-            </div>
-          </div>
-          <div class="project-card" tabindex="0">
-            <div class="project-icon">
               <i class="fas fa-brain"></i>
             </div>
             <h3>Mindful Learning Companion</h3>
             <p>
-              A web app that tracks user mood through a chat interface and adapts personalized learning paths with mindful activity recommendations
+              A web app that tracks user mood through a chat interface and
+              adapts personalized learning paths with mindful activity
+              recommendations
             </p>
             <div class="project-tech">
               <span class="tech-tag">HTML5</span>
@@ -321,35 +293,9 @@
               <span class="tech-tag">JavaScript</span>
               <span class="tech-tag">Responsive</span>
             </div>
-            <div class="project-links"> 
+            <div class="project-links">
               <a
                 href="https://github.com/t5i0n/Mindful-Learning-Companion.git"
-                class="project-link"
-                aria-label="View Source Code on GitHub"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fab fa-github"></i> Code
-              </a>
-            </div>
-          </div>
-          
-
-          <div class="project-card" tabindex="0">
-            <div class="project-icon">
-              <i class="fas fa-heartbeat"></i>
-            </div>
-            <h3>Thyroid Recurrence Prediction</h3>
-            <p>
-              Developed a machine learning system that analyzes clinical patient data to forecast thyroid condition recurrence, comparing Decision Tree and KNN algorithms for optimal performance.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">Python with Pandas, NumPy</span>
-              <span class="tech-tag">Scikit-learn</span>
-            </div>
-            <div class="project-links"> 
-              <a
-                href="https://github.com/t5i0n/Thyroid_Recurrence_Prediction.git"
                 class="project-link"
                 aria-label="View Source Code on GitHub"
                 target="_blank"
@@ -366,7 +312,9 @@
       <section id="contact" class="content-section fade-in">
         <h2>Get In Touch</h2>
         <p>
-          Want to talk, collaborate, or just say hi? I'd love to hear from you!
+          I’m currently open to internships and junior front-end developer
+          opportunities. Let’s connect if you’d like to collaborate or discuss
+          potential roles.
         </p>
 
         <div class="contact-container">
@@ -382,7 +330,7 @@
             </div>
             <div class="contact-method">
               <i class="fab fa-github"></i>
-              <div>
+               <div>
                 <h3>GitHub</h3>
                 <a href="https://github.com/t5i0n" class="contact-link">
                   github.com/t5i0n
@@ -445,23 +393,8 @@
     <!-- ===== Footer ===== -->
     <footer>
       <div class="footer-content">
-        <p>© 2026 tsion. Built with curiosity ✨</p>
-        <div class="social-links">
-          <a href="https://github.com/t5i0n" aria-label="GitHub profile">
-            <i class="fab fa-github"></i>
-          </a>
-          <a
-            href="https://linkedin.com/in/tsion-tesfaye-b0248a391"
-            aria-label="LinkedIn profile"
-          >
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="mailto:tsiontesfuu@gmail.com" aria-label="Send email">
-            <i class="fas fa-envelope"></i>
-          </a>
-        </div>
-      </div>
-    </footer>
+        <p>built by tsion • 2025</p> 
+    </footer> 
 
     <!-- Back to Top Button -->
     <button id="backTop" aria-label="Back to top">
