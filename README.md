@@ -8,14 +8,13 @@ A modern, responsive portfolio website built with HTML, CSS, and JavaScript.
 - **Fully Responsive** - Works on all devices
 - **Modern Design** - Clean aesthetics with custom animations
 - **Fast Performance** - Optimized loading and smooth interactions
-- **Accessible** - WCAG compliant with keyboard navigation
 - **Interactive Skills** - Animated progress bars
 - **Contact Form** - Functional contact form with validation
 
-## Technologies Used
+## Tech Stack
 
-- **HTML5** 
-- **CSS3** 
-- **JavaScript** 
-- **Font Awesome** 
-- **Google Fonts** 
+| Layer        | Technologies Used |
+|--------------|-------------------|
+| Frontend     | HTML, CSS, JavaScript |
+| UI/UX        | Font Awesome, Google Fonts, Responsive Design |
+| Versioning   | Git & GitHub |
