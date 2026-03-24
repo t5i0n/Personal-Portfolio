@@ -770,7 +770,7 @@ footer {
   box-shadow: var(--shadow);
 }
 
-/* ===== Loading Animation ===== */
+/* ===== Loading Animation ===== 
 .loading {
   position: fixed;
   top: 0;
@@ -796,7 +796,7 @@ footer {
   border-top-color: var(--primary-color);
   border-radius: 50%;
   animation: spin 1s linear infinite;
-}
+}*/
 
 @keyframes spin {
   to {
