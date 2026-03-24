@@ -62,7 +62,7 @@ document.getElementById("contactBtn").addEventListener("click", () => {
 });
 
 // ===== Dark / Light Mode =====
-const modeToggle = document.getElementById("modeToggle");
+// const modeToggle = document.getElementById("modeToggle"); Cannot declare a const variable twice: 'modeToggle'. error
 const modeIcon = modeToggle.querySelector('i');
 
 // Check for saved theme or prefer-color-scheme
